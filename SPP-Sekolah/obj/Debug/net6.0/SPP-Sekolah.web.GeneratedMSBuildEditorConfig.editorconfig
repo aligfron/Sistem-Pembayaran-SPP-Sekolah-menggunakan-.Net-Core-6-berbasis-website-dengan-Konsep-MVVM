@@ -9,159 +9,159 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SPP_Sekolah
 build_property.RootNamespace = SPP_Sekolah
-build_property.ProjectDir = D:\projek-praplacement\spp-sekolah\SPP-Sekolah\SPP-Sekolah\
+build_property.ProjectDir = D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\SPP-Sekolah\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\projek-praplacement\spp-sekolah\SPP-Sekolah\SPP-Sekolah
+build_property.MSBuildProjectDirectory = D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\SPP-Sekolah
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Auth/Index.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Auth/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Auth/Login.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Home/Index - Copy.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Home/Index - Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleCAtIENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Home/Index.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Home/Privacy.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Jurusan/Create.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Jurusan/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Jurusan/Delete.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Jurusan/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Jurusan/Details.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Jurusan/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Jurusan/Edit.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Jurusan/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Jurusan/Index.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Jurusan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Kelas/Create.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Kelas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VsYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Kelas/Delete.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Kelas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VsYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Kelas/Details.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Kelas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VsYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Kelas/Edit.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Kelas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VsYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Kelas/Index.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Kelas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2VsYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Pembayaran/Bayar.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Pembayaran/Bayar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVtYmF5YXJhblxCYXlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Pembayaran/Create.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Pembayaran/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVtYmF5YXJhblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Pembayaran/Index.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Pembayaran/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVtYmF5YXJhblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Pembayaran/PrescriptionPdf.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Pembayaran/PrescriptionPdf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVtYmF5YXJhblxQcmVzY3JpcHRpb25QZGYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Pembayaran/Print.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Pembayaran/Print.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVtYmF5YXJhblxQcmludC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/ProfilSekolah/Create.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/ProfilSekolah/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsU2Vrb2xhaFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/ProfilSekolah/Edit.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/ProfilSekolah/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsU2Vrb2xhaFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/ProfilSekolah/Index.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/ProfilSekolah/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsU2Vrb2xhaFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Shared/Error.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Shared/_Footer.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Shared/_Header.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Shared/_modal.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Shared/_modal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9tb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Shared/_Toast.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Shared/_Toast.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub2FzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Siswa/Create.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Siswa/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzd2FcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Siswa/Delete.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Siswa/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzd2FcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Siswa/Details.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Siswa/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzd2FcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Siswa/Edit.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Siswa/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzd2FcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Siswa/Index.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Siswa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzd2FcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/_ViewImports.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/_ViewStart.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/spp-sekolah/SPP-Sekolah/SPP-Sekolah/Views/Shared/_Layout.cshtml]
+[D:/projek-praplacement/spp-sekolah/Pembayaran-Spp-Sekolah/SPP-Sekolah/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ie0vbjrjeg

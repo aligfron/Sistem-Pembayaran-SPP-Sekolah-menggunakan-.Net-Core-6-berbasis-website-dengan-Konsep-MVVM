@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPP-Sekolah.web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae4cdb041be7f8fde2989a1710d3858a29db05b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPP-Sekolah.web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPP-Sekolah.web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
