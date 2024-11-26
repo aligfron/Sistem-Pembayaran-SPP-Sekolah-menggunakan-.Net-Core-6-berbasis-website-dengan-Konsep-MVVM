@@ -1,0 +1,964 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ASUS\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.2</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\ASUS\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore\24.1.0\contentFiles\any\any\Select.Html.dep" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore\24.1.0\contentFiles\any\any\Select.Html.dep')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Select.Html.dep</TargetPath>
+      <Private>True</Private>
+      <Link>Select.Html.dep</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\113.0.5672.0.manifest" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\113.0.5672.0.manifest')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\113.0.5672.0.manifest</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\113.0.5672.0.manifest</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\D3DCompiler_47.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\D3DCompiler_47.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\D3DCompiler_47.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\D3DCompiler_47.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\MEIPreload\manifest.json" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\MEIPreload\manifest.json')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\MEIPreload\manifest.json</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\MEIPreload\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\MEIPreload\manifest.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\MEIPreload\preloaded_data.pb" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\MEIPreload\preloaded_data.pb')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\MEIPreload\preloaded_data.pb</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\MEIPreload\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\MEIPreload\preloaded_data.pb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome.exe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome.exe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome.exe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_100_percent.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_100_percent.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome_100_percent.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome_100_percent.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_200_percent.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_200_percent.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome_200_percent.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome_200_percent.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_elf.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_elf.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome_elf.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome_elf.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_proxy.exe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_proxy.exe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome_proxy.exe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome_proxy.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_pwa_launcher.exe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_pwa_launcher.exe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome_pwa_launcher.exe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome_pwa_launcher.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_wer.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\chrome_wer.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\chrome_wer.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\chrome_wer.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\elevation_service.exe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\elevation_service.exe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\elevation_service.exe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\elevation_service.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\eventlog_provider.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\eventlog_provider.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\eventlog_provider.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\eventlog_provider.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\icudtl.dat" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\icudtl.dat')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\icudtl.dat</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\icudtl.dat</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\libEGL.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\libEGL.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\libEGL.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\libEGL.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\libGLESv2.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\libGLESv2.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\libGLESv2.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\libGLESv2.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\af.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\af.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\af.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\af.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\am.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\am.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\am.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\am.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ar-XB.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ar-XB.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ar-XB.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ar-XB.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ar.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ar.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ar.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ar.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\bg.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\bg.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\bg.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\bg.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\bn.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\bn.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\bn.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\bn.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ca.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ca.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ca.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ca.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\cs.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\cs.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\cs.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\cs.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\da.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\da.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\da.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\da.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\de.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\de.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\de.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\de.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\el.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\el.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\el.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\el.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\en-GB.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\en-GB.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\en-GB.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\en-GB.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\en-US.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\en-US.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\en-US.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\en-US.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\en-XA.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\en-XA.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\en-XA.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\en-XA.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\es-419.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\es-419.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\es-419.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\es-419.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\es.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\es.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\es.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\es.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\et.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\et.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\et.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\et.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fa.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fa.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\fa.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\fa.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fi.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fi.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\fi.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\fi.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fil.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fil.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\fil.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\fil.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fr.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\fr.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\fr.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\fr.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\gu.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\gu.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\gu.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\gu.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\he.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\he.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\he.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\he.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\hi.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\hi.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\hi.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\hi.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\hr.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\hr.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\hr.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\hr.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\hu.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\hu.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\hu.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\hu.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\id.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\id.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\id.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\id.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\it.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\it.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\it.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\it.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ja.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ja.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ja.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ja.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\kn.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\kn.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\kn.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\kn.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ko.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ko.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ko.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ko.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\lt.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\lt.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\lt.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\lt.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\lv.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\lv.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\lv.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\lv.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ml.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ml.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ml.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ml.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\mr.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\mr.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\mr.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\mr.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ms.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ms.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ms.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ms.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\nb.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\nb.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\nb.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\nb.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\nl.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\nl.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\nl.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\nl.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\pl.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\pl.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\pl.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\pl.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\pt-BR.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\pt-BR.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\pt-BR.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\pt-BR.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\pt-PT.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\pt-PT.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\pt-PT.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\pt-PT.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ro.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ro.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ro.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ro.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ru.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ru.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ru.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ru.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sk.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sk.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\sk.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\sk.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sl.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sl.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\sl.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\sl.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sr.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sr.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\sr.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\sr.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sv.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sv.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\sv.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\sv.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sw.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\sw.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\sw.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\sw.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ta.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ta.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ta.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ta.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\te.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\te.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\te.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\te.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\th.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\th.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\th.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\th.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\tr.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\tr.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\tr.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\tr.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\uk.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\uk.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\uk.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\uk.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ur.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\ur.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\ur.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\ur.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\vi.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\vi.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\vi.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\vi.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\zh-CN.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\zh-CN.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\zh-CN.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\zh-CN.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\zh-TW.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\locales\zh-TW.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\locales\zh-TW.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\locales\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\locales\zh-TW.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\mojo_core.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\mojo_core.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\mojo_core.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\mojo_core.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\nacl64.exe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\nacl64.exe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\nacl64.exe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\nacl64.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\nacl_irt_x86_32.nexe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\nacl_irt_x86_32.nexe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\nacl_irt_x86_32.nexe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\nacl_irt_x86_32.nexe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\nacl_irt_x86_64.nexe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\nacl_irt_x86_64.nexe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\nacl_irt_x86_64.nexe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\nacl_irt_x86_64.nexe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\notification_helper.exe" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\notification_helper.exe')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\notification_helper.exe</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\notification_helper.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\resources.pak" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\resources.pak')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\resources.pak</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\resources.pak</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\v8_context_snapshot.bin" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\v8_context_snapshot.bin')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\v8_context_snapshot.bin</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\v8_context_snapshot.bin</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\vk_swiftshader.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\vk_swiftshader.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\vk_swiftshader.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\vk_swiftshader.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\vk_swiftshader_icd.json" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\vk_swiftshader_icd.json')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\vk_swiftshader_icd.json</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\vk_swiftshader_icd.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\vulkan-1.dll" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore.blink\24.1.0\contentFiles\any\any\Chromium-113.0.5672.127\vulkan-1.dll')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore.Blink</NuGetPackageId>
+      <NuGetPackageVersion>24.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Chromium-113.0.5672.127\vulkan-1.dll</TargetPath>
+      <DestinationSubDirectory>Chromium-113.0.5672.127\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Chromium-113.0.5672.127\vulkan-1.dll</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.35\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.35\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.35\build\net6.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.35\build\net6.0\Microsoft.EntityFrameworkCore.Design.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMessagePackAnalyzer Condition=" '$(PkgMessagePackAnalyzer)' == '' ">C:\Users\ASUS\.nuget\packages\messagepackanalyzer\2.1.152</PkgMessagePackAnalyzer>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ASUS\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\ASUS\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ASUS\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.35</PkgMicrosoft_EntityFrameworkCore_Tools>
+  </PropertyGroup>
+</Project>
