@@ -1,0 +1,239 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Pagination<VMTbMSiswa>
+@{
+}
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+    <div class="container">
+        <div class="text-center wow fadeInUp mb-10" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Data Siswa</h6>
+        </div>
+        <br />
+
+        <!-- Form Filter Jurusan -->
+        <form id="frmFilterJurusan" asp-controller="Siswa" asp-action="Index">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <!-- Set lebar form menjadi separuh layar -->
+                    <label for="jurusanId" class="form-label">Nama Jurusan<span class="text-danger"> *</span></label>
+                    <select id="jurusanId" name="jurusanId" class="form-select">
+                        <option value="">--Pilih Jurusan--</option>
+                        @if (ViewBag.Jurusan != null)
+                        {
+                            foreach (VMTbMJurusan jurusan in ViewBag.Jurusan)
+                            {
+                                if (jurusan.Id == ViewBag.jurusanvalue)
+                                {
+                                    <option value="@jurusan.Id" selected>@jurusan.NamaJurusan</option>
+                                }
+                                else
+                                {
+
+                                    <option value="@jurusan.Id">@jurusan.NamaJurusan</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+        
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <!-- Set lebar form menjadi separuh layar -->
+                    <label for="kelasId" class="form-label">Nama Kelas<span class="text-danger"> *</span></label>
+                    <select id="kelasId" name="kelasId" class="form-select">
+                        <option value="">--Pilih Kelas--</option>
+                        @if (ViewBag.Kelas != null)
+                        {
+                            foreach (VMTbMKela kelas in ViewBag.Kelas)
+                            {
+                                if (kelas.Id == ViewBag.kelasvalue)
+                                {
+
+                                    <option value="@kelas.Id" selected>@kelas.NamaKelas</option>
+                                }
+                                else
+                                {
+
+                                    <option value="@kelas.Id">@kelas.NamaKelas</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            @{
+                if (Model != null && Model.Count > 0)
+                {
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <!-- Set lebar form menjadi separuh layar -->
+                            <label for="filter" class="form-label">Search : </label>
+                            <input class="form-control" type="text" id="filter" name="filter" value="@ViewBag.filter" />
+                        </div>
+                    </div>
+                }
+            }
+        </form>
+        @{
+            <div>
+                <button id="btnAdd" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-plus"></i> Tambah Data </button>
+              </div>
+             <br />
+            if (Model != null && Model.Count > 0)  // Perbaiki kondisi pengecekan
+            {
+                <div class="d-flex justify-content-between mt-10">
+                     <form id="frmpage" method="get" asp-controller="Siswa" asp-action="Index">
+                        <div class="input-group mx-5">
+                            <span class="input-group-text">Show </span>
+                            <input class="form-control" type="text" id="pageSize" name="currPageSize" value="@ViewBag.PageSize" />
+                            <span class="input-group-text"> Entries</span>
+                        </div>
+                        <input type="hidden" name="jurusanId" value="@ViewBag.jurusanvalue" />
+                        <input type="hidden" name="kelasId" value="@ViewBag.kelasvalue" />
+                        <input type="hidden" name="filter" value="@ViewBag.filter" />
+                        <input type="hidden" name="pageNumber" value="@(Model.PageIndex)" />
+                        <input type="hidden" name="orderBy" value="@ViewBag.OrderBy" />
+                    </form>
+                </div>
+
+                <div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="col-1 text-center">ID</th>
+                                <th class="col-1 text-center">Nama Lengkap</th>
+                                <th class="col-1 text-center">Kelas</th>
+                                <th class="col-1 text-center">Jurusan</th>
+                                <th class="col-1 text-center">NIS</th>
+                                <th class="col-1 text-center">NISN</th>
+                                <th class="col-1 text-center">Tahun Masuk</th>
+                                <th class="col-1 text-center">HP</th>
+                                <th class="col-1 text-center">Email</th>
+                                <th class="col-1 text-center">Images</th>
+                                <th class="col-2 text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var siswa in Model)
+                            {
+                                <tr>
+                                    <td class="text-center">@siswa.Id</td>
+                                    <td class="text-center">@siswa.Fullname</td>
+                                    <td class="text-center">@siswa.NamaKelas</td>
+                                    <td class="text-center">@siswa.NamaJurusan</td>
+                                    <td class="text-center">@siswa.Nis</td>
+                                    <td class="text-center">@siswa.Nisn</td>
+                                    <td class="text-center">@siswa.TahunMasuk</td>
+                                    <td class="text-center">@siswa.MobilePhone</td>
+                                    <td class="text-center">@siswa.Email</td>
+                                    <td class="text-center">@siswa.Images</td>
+                                    <td class="text-center">
+                                        <div class="btn-group" role="group">
+                                            <button data-id="@siswa.Id" class="btn btn-info" title="Detail" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-list"></i></button>
+                                            <button data-id="@siswa.Id" data-jurusanid="@siswa.JurusanId" class="btn btn-primary" title="Edit" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-edit"></i></button>
+                                            <button data-id="@siswa.Id" class="btn btn-danger" title="Delete" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="row">
+                    <div class="col-10 text-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                                    <a class="page-link" href="@Url.Action("Index", new { pageNumber = Model.PageIndex <= 1 ? 1 : Model.PageIndex - 1, currPageSize = ViewBag.PageSize, filter = ViewBag.filter, orderBy = ViewBag.OrderBy })" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                @for (int i = 1; i <= Model.TotalPages; i++)
+                                {
+                                    <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                        <a class="page-link" href="@Url.Action("Index", new { pageNumber = i, currPageSize = ViewBag.PageSize, filter = ViewBag.filter, orderBy = ViewBag.OrderBy })">
+                                            @i
+                                        </a>
+                                    </li>
+                                }
+                                <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                                    <a class="page-link" href="@Url.Action("Index", new { pageNumber = Model.PageIndex >= Model.TotalPages ? Model.TotalPages : Model.PageIndex + 1, currPageSize = ViewBag.PageSize, filter = ViewBag.filter, orderBy = ViewBag.OrderBy })" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <p>Data Belum Ada</p>
+            }
+        }
+
+
+    </div>
+</div>
+<script>
+    function detailClick() {
+
+    }
+    $("#btnAdd").click(function (e) {
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Siswa/Create/");
+    });
+    $(".btn-info").click(function (e) {
+
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Siswa/Details/" + $(this).data("id"));
+    });
+
+    $(".btn-primary").click(function (e) {
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Siswa/Edit/" + $(this).data("id"));
+    });
+
+    $(".btn-danger").click(function (e) {
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Siswa/Delete/" + $(this).data("id"));
+    });
+</script>
+<script>
+    const jurusanDropdown = document.getElementById("jurusanId");
+    const kelasDropdown = document.getElementById("kelasId");
+    const frmFilterJurusan = document.getElementById("frmFilterJurusan");
+
+    // Fungsi untuk mengaktifkan/mematikan dropdown kelas dan reset ke pilihan default saat jurusan berubah
+    function toggleKelasDropdown() {
+        // Mengecek apakah ada ViewBag.Kelas yang sudah terisi dalam dropdown
+        // jika ada kelas yang sudah dipilih atau ViewBag.Kelas berisi data, dropdown kelas tidak akan di-reset
+        // Fungsi untuk submit otomatis saat kelas dipilih
+
+        if (!jurusanDropdown.value) {
+            kelasDropdown.disabled = true;
+        } else {
+            kelasDropdown.disabled = false;
+        }
+    }
+    function submitFormOnJurusanSelect() {
+        frmFilterJurusan.submit();
+    }
+    // Fungsi untuk submit otomatis saat kelas dipilih
+    function submitFormOnKelasSelect() {
+        frmFilterJurusan.submit();
+    }
+
+    // Event listeners untuk perubahan pada dropdown
+    jurusanDropdown.addEventListener("change", submitFormOnJurusanSelect);
+    jurusanDropdown.addEventListener("change", toggleKelasDropdown);
+    kelasDropdown.addEventListener("change", submitFormOnKelasSelect);
+
+    // Inisialisasi awal
+    toggleKelasDropdown();
+</script>

@@ -1,0 +1,154 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model VMTbMSiswa?
+@{
+    Layout = null;
+}
+
+<div class="card">
+    <div class="card-body">
+        @{
+            if(Model != null){
+                    <form id="frmSiswa" >
+                    <div class="card-title row">
+                        <div class="col-4">Nama Lengkap<span class="text-danger"> * </span></div>
+                        <div class="col-8"><input type="text" class="form-control" name="Fullname" value="@Model.Fullname" /></div>
+                    </div>
+                    <div class="card-title row">
+                        <div class="col-4">No HP<span class="text-danger"> * </span></div>
+                        <div class="col-8"><input type="number" class="form-control" name="MobilePhone" value="@Model.MobilePhone" /></div>
+                    </div>
+                    <div class="card-title row">
+                        <div class="col-4">Email<span class="text-danger"> * </span></div>
+                        <div class="col-8"><input type="text" class="form-control" name="Email" value="@Model.Email" /></div>
+                    </div>
+                    <input type="hidden" class="form-control" name="RoleId" value="2" />
+                    <div class="card-title row">
+                        <div class="col-4">Tahun Masuk<span class="text-danger"> * </span></div>
+                        <div class="col-8"><input type="text" class="form-control" name="TahunMasuk" value="@Model.TahunMasuk" /></div>
+                    </div>
+                    <div class="card-title row">
+                        <div class="col-4">NIS<span class="text-danger"> * </span></div>
+                        <div class="col-8"><input type="text" class="form-control" name="Nis" value="@Model.Nis" /></div>
+                    </div>
+                    <div class="card-title row">
+                        <div class="col-4">NISN<span class="text-danger"> * </span></div>
+                        <div class="col-8"><input type="text" class="form-control" name="Nisn" value="@Model.Nisn" /></div>
+                    </div>
+                    <div class="card-title row">
+                        <div class="col-4">Nama Jurusan<span class="text-danger"> * </span></div>
+                        <div class="col-8">
+
+                            <select id="JurusanId" name="JurusanId1" class="form-select" disabled>
+                                <option value="">--Pilih Jurusan--</option>
+                                @if (ViewBag.Jurusan != null)
+                                {
+                                    foreach (VMTbMJurusan jurusan in ViewBag.Jurusan)
+                                    {
+                                        if (jurusan.Id == @Model.JurusanId)
+                                        {
+
+                                            <option value="@jurusan.Id" selected>@jurusan.NamaJurusan</option>
+                                        }
+                                        else
+                                        {
+
+                                            <option value="@jurusan.Id">@jurusan.NamaJurusan</option>
+                                        }
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-title row">
+                        <div class="col-4">Nama Kelas<span class="text-danger"> * </span></div>
+                        <div class="col-8">
+
+                            <select id="KelasId" name="KelasId" class="form-select" >
+                                <option value="">--Pilih Kelas--</option>
+                                @if (ViewBag.Kelas != null)
+                                {
+                                    foreach (VMTbMKela kelas in ViewBag.Kelas)
+                                    {
+                                        if (kelas.Id == @Model.KelasId)
+                                        {
+
+                                            <option value="@kelas.Id" selected>@kelas.NamaKelas</option>
+                                        }
+                                        else
+                                        {
+
+                                            <option value="@kelas.Id">@kelas.NamaKelas</option>
+                                        }
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                    <input type="hidden" name="BiodataId" value="@Model.BiodataId" />
+                    <input type="hidden" name="JurusanId" value="@Model.JurusanId" />
+
+
+
+                    </form>
+            }
+            else{
+                    <div class="card-title">
+                        Kategori Kosong
+                    </div>
+            }
+        }
+        
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+        <button type="button" class="btn btn-success" id="btnSave">Save</button>
+        &nbsp;
+        <button type="reset" class="btn btn-primary" id="btnReset">Reset</button>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $(document).ready(() => {
+        $("#staticModalLabel").text("@ViewBag.Title");
+        $("#btnSave").click(function (e) {
+            
+                $.ajax({
+                    url: "/Siswa/Edit",
+                    type: "post",
+                    data: $("#frmSiswa").serialize(),
+                    dataType: "json",
+                    //beforeSend: () => { },
+                    success: function (response) {
+                        if (response.statusCode == 200 ) {
+                            // Tampilkan alert sukses
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Data Berhasil Di Edit',
+                                showConfirmButton: false,
+                                timer: 3000 // Show the alert for 2 seconds
+                            }).then(() => {
+                                location.reload(); // Reload page after alert
+                            });
+                        } else {
+                            alert(response.statusCose + " - " + response.message)
+                        }
+                    },
+                    error: function (errResponse) {
+                        console.error(errResponse);
+                    }
+                });
+            
+            return false;
+        });
+        $("#frmSiswa").submit(function (e) {
+            //desable from submit function
+            e.preventDefault();
+        });
+        $("#btnReset").click(() => {
+            $("#frmSiswa")[0].reset();
+        });
+    });
+</script>

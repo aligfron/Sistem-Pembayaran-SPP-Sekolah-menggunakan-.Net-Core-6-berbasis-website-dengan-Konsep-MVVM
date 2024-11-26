@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eSPP</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            
+            @if (!string.IsNullOrEmpty(Context.Session.GetString("userId")))
+            {
+                if (Context.Session.GetInt32("userRoleId") == 1)
+                {
+                    if (TempData["sekolah"] != null)
+                    {
+
+                    }
+                    else
+                    {
+                        <a asp-controller="Home" asp-action="Index" class="nav-item nav-link @(ViewData["ActivePage"] as string == "Home" ? "active" : "")">Home</a>
+                        <a asp-controller="Pembayaran" asp-action="Index" class="nav-item nav-link @(ViewData["ActivePage"] as string == "Bayar SPP" ? "active" : "")">Bayar SPP</a>
+                        <a asp-controller="ProfilSekolah" asp-action="Index" class="nav-item nav-link @(ViewData["ActivePage"] as string == "ProfilSekolah" ? "active" : "")">Profil Sekolah</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Data Master</a>
+                            <div class="dropdown-menu fade-down m-0">
+                                <a asp-controller="Siswa" asp-action="Index" class="dropdown-item">Data Siswa</a>
+                                <a asp-controller="Kelas" asp-action="Index" class="dropdown-item">Data Kelas</a>
+                                <a asp-controller="Jurusan" asp-action="Index" class="dropdown-item">Data Jurusan</a>
+                            </div>
+                        </div>
+                    }
+                }
+                if (Context.Session.GetInt32("userRoleId") == 2)
+                {
+                    <a asp-controller="Home" asp-action="Index" class="nav-item nav-link @(ViewData["ActivePage"] as string == "Home" ? "active" : "")">Home</a>
+                    <a asp-controller="Pembayaran" asp-action="Bayar" asp-route-id="@Context.Session.GetInt32("userSiswaId")" class="nav-item nav-link @(ViewData["ActivePage"] as string == "Riwayat SPP" ? "active" : "")">Bayar SPP</a>
+                
+                
+                }
+
+
+            }
+
+        </div>
+        @if (!string.IsNullOrEmpty(Context.Session.GetString("userId")))
+        {
+            <a href="/Auth/Logout" class="btn btn-primary py-4 px-lg-5">Logout<i class="fa fa-arrow-right ms-3"></i></a>
+        }
+        else
+        {
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+        }
+
+    </div>
+</nav>
+<!-- Navbar End -->

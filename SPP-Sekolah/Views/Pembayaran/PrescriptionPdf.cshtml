@@ -1,0 +1,131 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model VMTbTPembayaran?;
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Digital</title>
+
+    @*<link rel="stylesheet" href="~/lib/mazer/compiled/css/app.css">
+    <link rel="stylesheet" href="~/lib/mazer/compiled/css/app-dark.css">*@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app.css">
+
+    <!-- CSS to define styles for screen and print -->
+    <style>
+        /* Further reduce the font sizes */
+        body {
+            font-size: 10px; /* Sesuaikan ukuran font secara global */
+        }
+
+        h6 {
+            font-size: 12px; /* Sesuaikan ukuran font untuk heading */
+        }
+
+        p, small {
+            font-size: 9px; /* Ukuran font untuk paragraf dan elemen small */
+        }
+
+        .text-center {
+            font-size: 9px; /* Sesuaikan ukuran font untuk teks yang di tengah */
+        }
+
+        .bg-primary {
+            font-size: 9px; /* Sesuaikan ukuran font untuk elemen dengan background berwarna */
+        }
+
+        /* Print styling */
+        @@media print {
+            @@page {
+                size: 80mm 200mm; /* Custom page size */
+                margin: 0;
+            }
+
+            body {
+                width: 80mm;
+                height: auto;
+                margin: 0;
+            }
+
+            .container {
+                margin: 0;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body data-bs-theme="light">
+    <script src="~/lib/mazer/static/js/initTheme.js"></script>
+    <div id="app" data-bs-theme="light">
+        <h6 class="m-3 mb-2">Bukti Pembayaran SPP</h6>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-2">&#8287; Nama</div>
+                    <div class="col-10"> : @Model.Fullname</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">&#8287; NIS</div>
+                    <div class="col-10"> : @Model.Nis</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">&#8287; Kelas</div>
+                    <div class="col-10"> : @Model.NamaKelas - @Model.NamaJurusan </div>
+                </div>
+
+            </div>
+        </div>
+
+        @{
+            if (Model != null)  // Perbaiki kondisi pengecekan
+            {
+
+                <div class="text-center">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Riwayat Pembayaran</h6>
+                    <br />
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="col-1 text-center">Bulan</th>
+                                <th class="col-1 text-center">Tahun</th>
+                                <th class="col-1 text-center">Jumlah</th>
+                                <th class="col-1 text-center">Id Petugas Bayar</th>
+                                <th class="col-2 text-center">Tanggal Bayar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                                    <td class="text-center">@Model.Bulan</td>
+                                    <td class="text-center">@Model.Tahun</td>
+                                    <td class="text-center">@Model.Jumlah</td>
+                                    <td class="text-center">@Model.CreatedBy</td>
+                                    <td class="text-center">@Model.CreatedOn.ToString("dd-MM-yyyy")</td>
+
+                                    
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                
+            }
+            else
+            {
+                <p>Belum Melakukan Pembayaran</p>
+            }
+         }
+    </div>
+</body>
+</html>
+
+

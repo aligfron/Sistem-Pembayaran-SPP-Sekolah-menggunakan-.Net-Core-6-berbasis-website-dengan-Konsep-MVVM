@@ -1,0 +1,104 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model VMTbSekolah
+@{
+}
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Tambah Profil Sekolah</h6>
+            <p style="color:red">*Wajib Mengisi Data Sekolah untuk bisa Mengakses Sistem Ini !</p>
+        </div>
+        <div class="row g-4 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="0.3s">
+                <form id="frmProfilSekolah">
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="NamaSekolah" name="NamaSekolah" placeholder="NamaSekolah" />
+                        <label for="NamaSekolah">Nama Sekolah</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Alamat" name="Alamat" placeholder="Alamat" />
+                        <label for="Alamat">Alamat</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="NoTlp" name="NoTlp" placeholder="NoTlp" />
+                        <label for="NoTlp">Nomor Telpon</label>
+                    </div>
+                </div>
+                
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="BiayaSpp" name="BiayaSpp" placeholder="BiayaSpp" />
+                        <label for="BiayaSpp">Biaya Spp</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" />
+                        <label for="Email">Email</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Npsn" name="Npsn" placeholder="Npsn"/>
+                        <label for="Npsn">NPSN</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="StatusSekolah" name="StatusSekolah" placeholder="StatusSekolah" />
+                        <label for="StatusSekolah">Status Sekolah</label>
+                    </div>
+                </div>
+                </form>
+                <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3 BtnAddprofilskl">Ubah Profil Sekolah</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(() => {
+        $(".BtnAddprofilskl").click(function (e) {
+            let formData = new FormData($("#frmProfilSekolah")[0]);
+
+            $.ajax({
+                url: "/ProfilSekolah/Create",
+                type: "post",
+                data: formData,
+                processData: false,
+                contentType: false,
+                beforeSend: () => { },
+                success: function (res) {  // Menggunakan 'res' di sini
+                    if (res.statusCode == 201) {
+                        location.replace("/ProfilSekolah"); // Reload halaman setelah alert
+                    } else {
+                        alert(res.statusCode + " - " + res.message);
+                    }
+                },
+                error: function (errResponse) {
+                    console.error(errResponse);
+                }
+            });
+
+            return false;
+        });
+
+        $("#frmProfilSekolah").submit(function (e) {
+            // Mencegah pengiriman form bawaan
+            e.preventDefault();
+        });
+    });
+</script>
+
+    

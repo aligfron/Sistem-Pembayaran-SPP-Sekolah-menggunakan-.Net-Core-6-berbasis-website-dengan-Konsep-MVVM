@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+            <img class="img-fluid"
+                 src="@(string.IsNullOrEmpty(Context.Session.GetString("userId")) ? "img/carousel-1.jpg" : "img/carousel-2.jpg")"
+                 alt="">
+
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                        <div class="col-sm-10 col-lg-8">
+                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Selamat Datang @Context.Session.GetString("userName") di</h5>
+                            <h1 class="display-3 text-white animated slideInDown">Sistem Pembayaran SPP Sekolah</h1>
+                            <p class="fs-5 text-white mb-4 pb-2">Platform ini memudahkan Anda dalam melakukan pembayaran SPP sekolah secara online. Nikmati layanan yang cepat, aman, dan mudah untuk memastikan pendidikan tetap berlanjut tanpa hambatan.</p>
+                            @if (string.IsNullOrEmpty(Context.Session.GetString("userId")))
+                            {
+                                <button class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft btnLogin" data-bs-toggle="modal" data-bs-target="#staticModal">Login</button>
+                                <button class="btn btn-light py-md-3 px-md-5 animated slideInRight btnRegis" data-bs-toggle="modal" data-bs-target="#staticModal">Register</button>
+                            }
+                            
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+<script>
+    $(document).ready(function () {
+        $(".btnLogin").click(function (e) {
+            $("#staticModalBody").html("");
+            $("#staticModalBody").load("/Auth/Index/");
+        });
+
+        $(".btnRegis").click(function (e) {
+            $("#staticModalBody").html("");
+            $("#staticModalBody").load("/Auth/Create/");
+        });
+
+        $("#btnLogout").click(function (e) {
+            location.href = "/Auth/Logout";
+        });
+    });
+</script>
+@if (TempData["AlertMessage"] != null)
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Swal.fire({
+                icon: '@TempData["AlertType"]',
+                title: '@TempData["AlertMessage"]',
+                showConfirmButton: false,
+                timer: 3000
+            });
+        });
+    </script>
+}

@@ -1,0 +1,134 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Pagination<VMTbMKela>
+@{
+}
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+    <div class="container">
+        <div class="text-center wow fadeInUp mb-10" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Data Kelas</h6>
+        </div>
+        <br />
+        <div class="d-flex justify-content-between mt-10">
+            <button id="btnAdd" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-plus"></i></button>
+            <form id="frmpage" method="get" asp-controller="Kelas" asp-action="Index">
+                <div class="input-group mx-5">
+
+                    <span class="input-group-text">Show </span>
+                    <input class="form-control" type="text" id="pageSize" name="currPageSize" value="@ViewBag.PageSize" />
+                    <span class="input-group-text"> Entris</span>
+
+                </div>
+                <input type="hidden" name="filter" value="@ViewBag.filter" />
+                <input type="hidden" name="pageNumber" value="@(Model.PageIndex)" />
+                <input type="hidden" name="orderBy" value="@ViewBag.OrderBy" />
+            </form>
+            <form id="frmFilter" asp-controller="Kelas" asp-action="Index">
+                <div class="input-group">
+                    <span class="input-group-text">Search : </span>
+                    <input class="form-control" type="text" id="filter" name="filter" value="@ViewBag.filter" />
+                    <button type="submit" class="btn btn-success input-group-text"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="col-1 text-center">ID</th>
+                        <th class="col-2 text-center">Nama Kelas</th>
+                        <th class="col-2 text-center">Name Jurusan</th>
+                        <th class="col-3 text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        if (Model != null || Model.Count > 0)
+                        {
+                            foreach (VMTbMKela kelas in Model)
+                            {
+                                <tr>
+                                    <td class="text-center">@kelas.Id</td>
+                                    <td class="text-center">@kelas.NamaKelas</td>
+                                    <td class="text-center">@kelas.NamaJurusan</td>
+                                    <td class="text-center">
+                                        <div class="btn-group" role="group">
+                                            <button data-id="@kelas.Id" class="btn btn-info" title="Detail" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-list"></i></button>
+                                            <button data-id="@kelas.Id" class="btn btn-primary" title="Edit" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-edit"></i></button>
+                                            <button data-id="@kelas.Id" class="btn btn-danger" title="Delete" data-bs-toggle="modal" data-bs-target="#staticModal"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="7" class="text-center">Data Belum Ada</td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-10 text-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                            <a class="page-link" href="@Url.Action("Index", new { pageNumber = Model.PageIndex <= 1 ? 1 : Model.PageIndex - 1, currPageSize = ViewBag.PageSize, filter = ViewBag.filter, orderBy = ViewBag.OrderBy })" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        @for (int i = 1; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link" href="@Url.Action("Index", new { pageNumber = i, currPageSize = ViewBag.PageSize, filter = ViewBag.filter, orderBy = ViewBag.OrderBy })">
+                                    @i
+                                </a>
+                            </li>
+                        }
+
+                        <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                            <a class="page-link" href="@Url.Action("Index", new { pageNumber = Model.PageIndex >= Model.TotalPages ? Model.TotalPages : Model.PageIndex + 1, currPageSize = ViewBag.PageSize, filter = ViewBag.filter, orderBy = ViewBag.OrderBy })" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function detailClick() {
+
+    }
+    $("#btnAdd").click(function (e) {
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Kelas/Create/");
+    });
+    $(".btn-info").click(function (e) {
+
+        //alert("Saya di Tekan (Id = " + $(this).data("id") + ")!");
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Kelas/Details/" + $(this).data("id"));
+        //location.href="/Category/Details/" + $(this).data("id");
+    });
+
+    $(".btn-primary").click(function (e) {
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Kelas/Edit/" + $(this).data("id"));
+    });
+    $(".btn-danger").click(function (e) {
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Kelas/Delete/" + $(this).data("id"));
+    });
+</script>

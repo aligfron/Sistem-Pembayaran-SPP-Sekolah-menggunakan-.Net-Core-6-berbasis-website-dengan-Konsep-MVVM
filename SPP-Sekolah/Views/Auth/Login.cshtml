@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<form asp-controller="Auth" asp-action="Login" method="post" id="frmLogin">
+    <div class="form-floating">
+        <input type="email" class="form-control" id="email" name="Email" placeholder="Your Email">
+        <label for="email">Your Email</label>
+    </div>
+    <div class="form-floating mt-3">
+        <input type="password" class="form-control" id="password" name="Password" placeholder="Your Password">
+        <label for="email">Your Password</label>
+    </div>
+    <br />
+    <div class="input-group justify-content-end">
+        <button type="submit" class="btn btn-primary"><span>Login</span></button>
+    </div>
+</form>

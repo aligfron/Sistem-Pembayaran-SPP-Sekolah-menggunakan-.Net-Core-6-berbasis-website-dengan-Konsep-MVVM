@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model VMTbMJurusan?
+@{
+    Layout = null;
+}
+
+<div class="card">
+    <div class="card-body">
+        @{
+            if(Model != null){
+                    <form id="frmjur" >
+                    <div class="card-title row">
+                        <div class="col-4">Nama Jurusan <span class="text-danger"> * </span></div>
+                        <div class="col-8"><input type="text" class="form-control" name="NamaJurusan" value="@Model.NamaJurusan"/></div>
+                    </div>
+                    
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                    </form>
+            }
+            else{
+                    <div class="card-title">
+                        Kategori Kosong
+                    </div>
+            }
+        }
+        
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+        <button type="button" class="btn btn-success" id="btnSave">Save</button>
+        &nbsp;
+        <button type="reset" class="btn btn-primary" id="btnReset">Reset</button>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $(document).ready(() => {
+        $("#staticModalLabel").text("@ViewBag.Title");
+        $("#btnSave").click(function (e) {
+            
+                $.ajax({
+                    url: "/Jurusan/Edit",
+                    type: "post",
+                    data: $("#frmjur").serialize(),
+                    dataType: "json",
+                    //beforeSend: () => { },
+                    success: function (response) {
+                        if (response.statusCode == 200) {
+                            // Tampilkan alert sukses
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Data Berhasil Di Edit',
+                                showConfirmButton: false,
+                                timer: 3000 // Show the alert for 2 seconds
+                            }).then(() => {
+                                location.reload(); // Reload page after alert
+                            });
+                        } else {
+                            alert(response.statusCose + " - " + response.message)
+                        }
+                    },
+                    error: function (errResponse) {
+                        console.error(errResponse);
+                    }
+                });
+            
+            return false;
+        });
+        $("#frmjur").submit(function (e) {
+            //desable from submit function
+            e.preventDefault();
+        });
+        $("#btnReset").click(() => {
+            $("#frmjur")[0].reset();
+        });
+    });
+</script>

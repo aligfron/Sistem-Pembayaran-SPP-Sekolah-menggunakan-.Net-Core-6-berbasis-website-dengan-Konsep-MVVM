@@ -1,0 +1,106 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model VMTbSekolah
+@{
+}
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Edit Profil Sekolah</h6>
+        </div>
+        <div class="row g-4 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="0.3s">
+                <form id="frmProfilSekolahEdit">
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="NamaSekolah" name="NamaSekolah" placeholder="NamaSekolah" value="@Model.NamaSekolah">
+                        <label for="NamaSekolah">Nama Sekolah</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Alamat" name="Alamat" placeholder="Alamat" value="@Model.Alamat">
+                        <label for="Alamat">Alamat</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="NoTlp" name="NoTlp" placeholder="NoTlp" value="@Model.NoTlp">
+                        <label for="NoTlp">Nomor Telpon</label>
+                    </div>
+                </div>
+                
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="BiayaSpp" name="BiayaSpp" placeholder="BiayaSpp" value="@Model.BiayaSpp">
+                        <label for="BiayaSpp">Biaya Spp</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" value="@Model.Email">
+                        <label for="Email">Email</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Npsn" name="Npsn" placeholder="Npsn" value="@Model.Npsn">
+                        <label for="Npsn">NPSN</label>
+                    </div>
+                </div>
+                <div class="col-12  mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="StatusSekolah" name="StatusSekolah" placeholder="StatusSekolah" value="@Model.StatusSekolah">
+                        <label for="StatusSekolah">Status Sekolah</label>
+                    </div>
+                </div>
+                <input type="hidden" name="Id" value="@Model.Id" />
+                </form>
+                <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3 BtnEditprofilskl">Ubah Profil Sekolah</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(() => {
+        $(".BtnEditprofilskl").click(function (e) {
+            //debugger
+            //console.log("#frmProfilSekolahEdit isvalid?", $("#frmProfilSekolahEdit").valid());
+            
+                $.ajax({
+                    url: "/ProfilSekolah/Edit",
+                    type: "post",
+                    data: $("#frmProfilSekolahEdit").serialize(),
+                    dataType: "json",
+                    //beforeSend: () => { },
+                    success: function (response) {
+                        if (response.statusCode == 200) {
+                            // Tampilkan alert sukses
+                            
+                                location.replace("/ProfilSekolah"); // Reload page after alert
+                           
+                        } else {
+                            alert(response.statusCose + " - " + response.message)
+                        }
+                    },
+                    error: function (errResponse) {
+                        console.error(errResponse);
+                    }
+                });
+            
+            return false;
+        });
+        $("#frmProfilSekolahEdit").submit(function (e) {
+            //desable from submit function
+            e.preventDefault();
+        });
+        
+    });
+</script>
+    

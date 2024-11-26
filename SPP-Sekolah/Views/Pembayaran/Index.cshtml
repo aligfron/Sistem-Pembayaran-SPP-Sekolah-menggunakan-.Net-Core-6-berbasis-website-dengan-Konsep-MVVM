@@ -1,0 +1,134 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<VMTbMSiswa>
+@{
+}
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+    <div class="container">
+        <div class="text-center wow fadeInUp mb-10" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Bayar SPP</h6>
+        </div>
+        <br />
+
+        <!-- Form Filter Jurusan -->
+        <form id="frmFilterJurusan" asp-controller="Pembayaran" asp-action="Index">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="jurusanId" class="form-label">Nama Jurusan<span class="text-danger"> *</span></label>
+                    <select id="jurusanId" name="jurusanId" class="form-select">
+                        <option value="">--Pilih Jurusan--</option>
+                        @if (ViewBag.Jurusan != null)
+                        {
+                            foreach (VMTbMJurusan jurusan in ViewBag.Jurusan)
+                            {
+                                if (jurusan.Id == ViewBag.jurusanvalue)
+                                {
+                                    <option value="@jurusan.Id" selected>@jurusan.NamaJurusan</option>
+                                }
+                                else
+                                {
+                                    <option value="@jurusan.Id">@jurusan.NamaJurusan</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="kelasId" class="form-label">Nama Kelas<span class="text-danger"> *</span></label>
+                    <select id="kelasId" name="kelasId" class="form-select" disabled>
+                        <option value="">--Pilih Kelas--</option>
+                        @if (ViewBag.Kelas != null)
+                        {
+                            foreach (VMTbMKela kelas in ViewBag.Kelas)
+                            {
+                                if (kelas.Id == ViewBag.kelasvalue)
+                                {
+                                    <option value="@kelas.Id" selected>@kelas.NamaKelas</option>
+                                }
+                                else
+                                {
+                                    <option value="@kelas.Id">@kelas.NamaKelas</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        @{
+            if (Model != null && Model.Count > 0)
+            {
+                <div>
+                    <form id="frmFilter" asp-controller="Pembayaran" asp-action="Bayar">
+                        <label for="filter" class="form-label">Nama Siswa dan NIS<span class="text-danger"> *</span></label>
+                        <select id="id" name="id" class="form-select">
+                            <option value="">--Pilih Siswa dan NIS--</option>
+                            @if (Model != null)
+                            {
+                                foreach (var siswa in Model)
+                                {
+                                    if (siswa.Nis == ViewBag.filter)
+                                    {
+                                        <option value="@siswa.Id" selected>@siswa.Fullname || @siswa.Nis</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@siswa.Id">@siswa.Fullname || @siswa.Nis</option>
+                                    }
+                                }
+                            }
+                        </select>
+                        <br />
+                        <button type="submit" class="btn btn-success btnCariSiswa">Cari Data</button>
+                    </form>
+                </div>
+
+            }
+            else
+            {
+                <p>Belum Memilih Jurusan dan Kelas</p>
+            }
+        }
+    </div>
+</div>
+
+<script>
+    const jurusanDropdown = document.getElementById("jurusanId");
+    const kelasDropdown = document.getElementById("kelasId");
+    const frmFilterJurusan = document.getElementById("frmFilterJurusan");
+
+    // Fungsi untuk mengaktifkan/mematikan dropdown kelas dan reset ke pilihan default saat jurusan berubah
+    function toggleKelasDropdown() {
+        // Mengecek apakah ada ViewBag.Kelas yang sudah terisi dalam dropdown
+        // jika ada kelas yang sudah dipilih atau ViewBag.Kelas berisi data, dropdown kelas tidak akan di-reset
+        // Fungsi untuk submit otomatis saat kelas dipilih
+        
+        if (!jurusanDropdown.value) {
+            kelasDropdown.disabled = true;
+        } else {
+            kelasDropdown.disabled = false;
+        }
+    }
+    function submitFormOnJurusanSelect() {
+        frmFilterJurusan.submit();
+    }
+    // Fungsi untuk submit otomatis saat kelas dipilih
+    function submitFormOnKelasSelect() {
+        frmFilterJurusan.submit();
+    }
+
+    // Event listeners untuk perubahan pada dropdown
+    jurusanDropdown.addEventListener("change", submitFormOnJurusanSelect);
+    jurusanDropdown.addEventListener("change", toggleKelasDropdown);
+    kelasDropdown.addEventListener("change", submitFormOnKelasSelect);
+
+    // Inisialisasi awal
+    toggleKelasDropdown();
+</script>
+

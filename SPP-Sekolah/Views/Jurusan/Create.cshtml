@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = null;
+}
+
+<div class="card">
+    <div class="card-body">
+        <form id="frmJurusan" >
+            <div class="card-title row">
+                <div class="col-4">Nama Jurusan<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="text" class="form-control" name="NamaJurusan" /></div>
+            </div>
+        </form>        
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+        <button type="button" class="btn btn-success" id="btnSave">Tambah</button>
+        &nbsp;
+        <button type="reset" class="btn btn-primary" id="btnReset">Reset</button>
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+        $("#staticModalLabel").text("@ViewBag.Title");
+        $("#btnSave").click(function (e) {
+
+                $.ajax({
+                    url:"/Jurusan/Create",
+                    type: "post",
+                    data: $("#frmJurusan").serialize(),
+                    dataType: "json",
+                    //beforeSend: () => { },
+                    success: function (response) {
+                        if (response.statusCode == 200 || response.statusCode == 201) {
+                            // Tampilkan alert sukses
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Berhasil Tambah Data Jurusan',
+                                showConfirmButton: false,
+                                timer: 3000 // Show the alert for 2 seconds
+                            }).then(() => {
+                                location.reload(); // Reload page after alert
+                            });
+                        } else {
+                            alert(response.statusCose+" - "+response.message)
+                        }
+                    },
+                    error: function (errResponse) {
+                        console.error(errResponse);
+                    }
+                });
+            
+            return false;
+        });
+        $("#frmJurusan").submit(function (e) {
+            //desable from submit function
+            e.preventDefault();
+        });
+        
+        $("#btnReset").click(() => {
+            $("#frmJurusan")[0].reset();
+        });
+    });
+</script>

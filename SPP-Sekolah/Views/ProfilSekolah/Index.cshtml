@@ -1,0 +1,71 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model VMTbSekolah
+@{
+}
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Profil Sekolah</h6>
+            <h1 class="mb-5">@Model.NamaSekolah</h1>
+        </div>
+        <div class="row g-4 d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="0.3s">
+                <h5>@Model.NamaSekolah</h5>
+                <p class="mb-4">@Model.NamaSekolah merupakan sekolah yang berstatus statussekolah dengan uang SPP tahun ini sebesar @Model.BiayaSpp. Dengan jumlah siswa yaitu count</p>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                        <i class="fa fa-map-marker-alt text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="text-primary">Alamat Sekolah</h5>
+                        <p class="mb-0">@Model.Alamat</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                        <i class="fa fa-phone-alt text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="text-primary">Nomor Telepon</h5>
+                        <p class="mb-0">@Model.NoTlp</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                        <i class="fa fa-envelope-open text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="text-primary">Email</h5>
+                        <p class="mb-0">@Model.Email</p>
+                    </div>
+                    
+                </div>
+                <div class="col-12">
+                    <a asp-controller="ProfilSekolah" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary w-100 py-3">
+                        Ubah Profil Sekolah
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Swal.fire({
+                icon: '@TempData["AlertType"]',
+                title: '@TempData["AlertMessage"]',
+                showConfirmButton: false,
+                timer: 3000
+            });
+        });
+    </script>
+}
+
+    

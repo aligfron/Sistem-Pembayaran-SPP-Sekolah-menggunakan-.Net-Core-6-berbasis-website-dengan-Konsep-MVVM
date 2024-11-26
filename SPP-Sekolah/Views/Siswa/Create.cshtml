@@ -1,0 +1,174 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = null;
+}
+
+<div class="card">
+    <div class="card-body">
+        <form id="frmSiswa" >
+            <div class="card-title row">
+                <div class="col-4">Nama Lengkap<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="text" class="form-control" name="Fullname" /></div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">No HP<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="number" class="form-control" name="MobilePhone" /></div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">Email<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="text" class="form-control" name="Email" autocomplete="off" /></div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">Password<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="password" class="form-control" name="Password" autocomplete="off" /></div>
+            </div>
+
+            <input type="hidden" class="form-control" name="RoleId" value="2" />
+            <div class="card-title row">
+                <div class="col-4">Tahun Masuk<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="text" class="form-control" name="TahunMasuk" /></div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">NIS<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="text" class="form-control" name="Nis" /></div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">NISN<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="text" class="form-control" name="Nisn" /></div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">Nama Jurusan<span class="text-danger"> * </span></div>
+                <div class="col-8">
+
+                    <select id="jurusanid" name="JurusanId" class="form-select">
+                        <option value="">--Pilih Jurusan--</option>
+                        @if (ViewBag.Jurusan != null)
+                        {
+                            foreach (VMTbMJurusan jurusan in ViewBag.Jurusan)
+                            {
+                                    <option value="@jurusan.Id">@jurusan.NamaJurusan</option>
+                                
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">Nama Kelas<span class="text-danger"> * </span></div>
+                <div class="col-8">
+
+                    <select id="kelasid" name="KelasId" class="form-select">
+                        <option value="">--Pilih Kelas--</option>
+                    </select>
+                </div>
+            </div>
+
+            
+        </form>        
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+        <button type="button" class="btn btn-success" id="btnSave">Tambah</button>
+        &nbsp;
+        <button type="reset" class="btn btn-primary" id="btnReset">Reset</button>
+    </div>
+</div>
+
+<script>
+    $("#jurusanid").change(function (e) {
+        let jurusanId = $(this).val();
+
+        // Kosongkan dropdown kelas sebelum memulai request
+        $("#kelasid").empty();
+
+        // Tambahkan opsi loading atau placeholder saat menunggu respons
+        $("#kelasid").append('<option value="">Loading...</option>');
+
+        $.ajax({
+            url: "/Siswa/GetByJurusanId",
+            data: { jurusanId: jurusanId },
+            dataType: "json",
+            beforeSend: () => {
+                // Opsional: Tampilkan loading spinner atau indikator
+            },
+            success: function (res) {
+                $("#kelasid").empty(); // Kosongkan dropdown kelas lagi setelah respons datang
+
+                if (res.statusCode == 200) {
+                    if (res.data && res.data.length > 0) {
+                        // Jika ada data, tambahkan opsi untuk setiap item kelas
+                        $.each(res.data, function (index, data) {
+                            $("#kelasid").append(
+                                `<option value="${data.id}">${data.namaKelas}</option>`
+                            );
+                        });
+                    } else {
+                        // Jika tidak ada data, tampilkan opsi "Kelas kosong"
+                        $("#kelasid").append(
+                            `<option value="">Kelas kosong</option>`
+                        );
+                    }
+                } else if (res.statusCode == 204) {
+                    // Jika statusCode 204 (No Content), tampilkan opsi "Kelas kosong"
+                    $("#kelasid").append(
+                        `<option value="">Kelas kosong</option>`
+                    );
+                } else {
+                    // Jika statusCode lain, tampilkan pesan error
+                    alert(res.message || "Terjadi kesalahan");
+                }
+            },
+            error: function (errRes) {
+                // Tangani error jika request gagal
+                $("#kelasid").empty();
+                $("#kelasid").append(
+                    `<option value="">Kelas kosong</option>`
+                );
+            }
+        });
+    });
+
+    $(document).ready(() => {
+        $("#staticModalLabel").text("@ViewBag.Title");
+        $("#btnSave").click(function (e) {
+
+                $.ajax({
+                    url:"/Siswa/Create",
+                    type: "post",
+                    data: $("#frmSiswa").serialize(),
+                    dataType: "json",
+                    //beforeSend: () => { },
+                    success: function (response) {
+                        if (response.statusCode == 200 || response.statusCode == 201) {
+                            // Tampilkan alert sukses
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Berhasil Tambah Data Jurusan',
+                                showConfirmButton: false,
+                                timer: 3000 // Show the alert for 2 seconds
+                            }).then(() => {
+                                location.reload(); // Reload page after alert
+                            });
+                        } else {
+                            alert(response.statusCose+" - "+response.message)
+                        }
+                    },
+                    error: function (errResponse) {
+                        console.error(errResponse);
+                    }
+                });
+            
+            return false;
+        });
+        $("#frmSiswa").submit(function (e) {
+            //desable from submit function
+            e.preventDefault();
+        });
+        
+        $("#btnReset").click(() => {
+            $("#frmSiswa")[0].reset();
+        });
+    });
+</script>
