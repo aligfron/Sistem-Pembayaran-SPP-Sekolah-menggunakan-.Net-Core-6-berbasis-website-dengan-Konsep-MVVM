@@ -568,67 +568,59 @@ namespace DataAccess
 
 
         public VMResponse<VMTbMBiodatum> Delete(int id, int userId)
-
         {
             VMResponse<VMTbMBiodatum?> response = new VMResponse<VMTbMBiodatum?>();
             using (IDbContextTransaction dbTrans = db.Database.BeginTransaction())
             {
                 try
                 {
-                    TbMBiodatum? existingData = db.TbMBiodata
-                                                   .FirstOrDefault(c => c.Id == id && !c.IsDeleted);
+                    // Hapus data dari tabel TbMBiodata
+                    TbMBiodatum? existingData = db.TbMBiodata.FirstOrDefault(c => c.Id == id);
                     if (existingData == null)
                     {
-
                         response.StatusCode = HttpStatusCode.NotFound;
-                        response.Message = $"{HttpStatusCode.NotFound} - Student Not Fount";
+                        response.Message = $"{HttpStatusCode.NotFound} - Student Not Found";
+                        return response;
+                    }
+                    db.TbMBiodata.Remove(existingData);
+                    db.SaveChanges();
+
+                    // Hapus data dari tabel TbMUsers
+                    var existingDataUser = db.TbMUsers.FirstOrDefault(c => c.BiodataId == id);
+                    if (existingDataUser != null)
+                    {
+                        db.TbMUsers.Remove(existingDataUser);
+                        db.SaveChanges();
                     }
 
+                    // Hapus data dari tabel TbMSiswas
+                    var existingDataSiswa = db.TbMSiswas.FirstOrDefault(c => c.BiodataId == id);
+                    if (existingDataSiswa != null)
+                    {
+                        db.TbMSiswas.Remove(existingDataSiswa);
+                        db.SaveChanges();
+                    }
 
-                    existingData!.IsDeleted = true;
-                    existingData.DeletedBy = userId;
-                    existingData.DeletedOn = DateTime.Now;
-
-                    db.Update(existingData);
-                    db.SaveChanges();
-
-                    var existingDataUser = db.TbMUsers
-                                          .FirstOrDefault(c => c.BiodataId == id && !c.IsDeleted);
-                    existingDataUser!.IsDeleted = true;
-                    existingDataUser.DeletedBy = userId;
-                    existingDataUser.DeletedOn = DateTime.Now;
-
-                    db.Update(existingDataUser);
-                    db.SaveChanges();
-                    var existingDataSiswa = db.TbMSiswas
-                                              .FirstOrDefault(c => c.BiodataId == id && !c.IsDeleted);
-                    existingDataSiswa!.IsDeleted = true;
-                    existingDataSiswa.DeletedBy = userId;
-                    existingDataSiswa.DeletedOn = DateTime.Now;
-
-                    db.Update(existingDataSiswa);
-                    db.SaveChanges();
                     dbTrans.Commit();
 
                     response.Data = new VMTbMBiodatum
                     {
-                        IsDeleted = existingData!.IsDeleted,
-                        DeletedBy = existingData.DeletedBy,
-                        DeletedOn = existingData.DeletedOn
+                        // Kirimkan data terkait yang relevan sebagai respons
+                        Id = id
                     };
 
                     response.StatusCode = HttpStatusCode.OK;
-                    response.Message = $"{HttpStatusCode.OK} - Student  Has been Deleted";
-
+                    response.Message = $"{HttpStatusCode.OK} - Student and related data have been permanently deleted.";
                 }
                 catch (Exception ex)
                 {
-
                     dbTrans.Rollback();
+                    response.StatusCode = HttpStatusCode.InternalServerError;
                     response.Message = $"{HttpStatusCode.InternalServerError} - {ex.Message}";
                 }
             }
             return response;
         }
+
     }
 }

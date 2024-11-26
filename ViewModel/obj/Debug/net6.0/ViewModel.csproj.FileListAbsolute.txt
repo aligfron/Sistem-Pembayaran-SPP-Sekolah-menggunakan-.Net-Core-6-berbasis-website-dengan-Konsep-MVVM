@@ -9,3 +9,15 @@ D:\projek-praplacement\spp-sekolah\SPP-Sekolah\ViewModel\obj\Debug\net6.0\ViewMo
 D:\projek-praplacement\spp-sekolah\SPP-Sekolah\ViewModel\obj\Debug\net6.0\refint\ViewModel.dll
 D:\projek-praplacement\spp-sekolah\SPP-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.pdb
 D:\projek-praplacement\spp-sekolah\SPP-Sekolah\ViewModel\obj\Debug\net6.0\ref\ViewModel.dll
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\bin\Debug\net6.0\ViewModel.deps.json
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\bin\Debug\net6.0\ViewModel.dll
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\bin\Debug\net6.0\ViewModel.pdb
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.AssemblyInfoInputs.cache
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.AssemblyInfo.cs
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.csproj.CoreCompileInputs.cache
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.sourcelink.json
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.dll
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\refint\ViewModel.dll
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ViewModel.pdb
+D:\projek-praplacement\spp-sekolah\Pembayaran-Spp-Sekolah\ViewModel\obj\Debug\net6.0\ref\ViewModel.dll

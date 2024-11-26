@@ -187,7 +187,6 @@ namespace DataAccess
 
 
         public VMResponse<VMTbMJurusan> Delete(int id, int userId)
-
         {
             VMResponse<VMTbMJurusan?> response = new VMResponse<VMTbMJurusan?>();
             using (IDbContextTransaction dbTrans = db.Database.BeginTransaction())
@@ -195,42 +194,35 @@ namespace DataAccess
                 try
                 {
                     TbMJurusan? existingData = db.TbMJurusans
-                                                   .FirstOrDefault(c => c.Id == id && !c.IsDeleted);
+                                                   .FirstOrDefault(c => c.Id == id);
                     if (existingData == null)
                     {
-
                         response.StatusCode = HttpStatusCode.NotFound;
-                        response.Message = $"{HttpStatusCode.NotFound} - Major Not Fount";
+                        response.Message = $"{HttpStatusCode.NotFound} - Major Not Found";
+                        return response;
                     }
 
-
-                    existingData!.IsDeleted = true;
-                    existingData.DeletedBy = userId;
-                    existingData.DeletedOn = DateTime.Now;
-
-                    db.Update(existingData);
+                    db.TbMJurusans.Remove(existingData); // Hard delete
                     db.SaveChanges();
                     dbTrans.Commit();
 
                     response.Data = new VMTbMJurusan
                     {
-                        IsDeleted = existingData!.IsDeleted,
-                        DeletedBy = existingData.DeletedBy,
-                        DeletedOn = existingData.DeletedOn
+                        Id = existingData.Id,
+                        NamaJurusan = existingData.NamaJurusan // Sesuaikan dengan properti yang ingin Anda tampilkan
                     };
 
                     response.StatusCode = HttpStatusCode.OK;
-                    response.Message = $"{HttpStatusCode.OK} - Major  Has been Deleted";
-
+                    response.Message = $"{HttpStatusCode.OK} - Major has been deleted permanently";
                 }
                 catch (Exception ex)
                 {
-
                     dbTrans.Rollback();
                     response.Message = $"{HttpStatusCode.InternalServerError} - {ex.Message}";
                 }
             }
             return response;
         }
+
     }
 }

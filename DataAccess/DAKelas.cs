@@ -241,29 +241,24 @@ namespace DataAccess
                 try
                 {
                     TbMKela? existingData = db.TbMKelas
-                                                   .FirstOrDefault(c => c.Id == id && !c.IsDeleted);
+                                                   .FirstOrDefault(c => c.Id == id);
                     if (existingData == null)
                     {
 
                         response.StatusCode = HttpStatusCode.NotFound;
                         response.Message = $"{HttpStatusCode.NotFound} - Class Not Fount";
+                        return response;
                     }
-
-
-                    existingData!.IsDeleted = true;
-                    existingData.DeletedBy = userId;
-                    existingData.DeletedOn = DateTime.Now;
-
-                    db.Update(existingData);
+                    db.TbMKelas.Remove(existingData); // Hard delete
                     db.SaveChanges();
                     dbTrans.Commit();
 
                     response.Data = new VMTbMKela
                     {
-                        IsDeleted = existingData!.IsDeleted,
-                        DeletedBy = existingData.DeletedBy,
-                        DeletedOn = existingData.DeletedOn
+                        Id = existingData.Id,
+                        NamaKelas = existingData.NamaKelas
                     };
+
 
                     response.StatusCode = HttpStatusCode.OK;
                     response.Message = $"{HttpStatusCode.OK} - Class  Has been Deleted";

@@ -1,6 +1,7 @@
 ﻿using DataAccess;
 using DataModel;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 using ViewModel;
 
 namespace Spp_sekolah.API.Controllers
@@ -120,18 +121,25 @@ namespace Spp_sekolah.API.Controllers
             try
             {
                 VMResponse<VMTbMJurusan> response = await Task.Run(() => jurusan.Delete(id, userId));
-                if (response.Data != null) { return Ok(response); }
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    return Ok(response);
+                }
+                else if (response.StatusCode == HttpStatusCode.NotFound)
+                {
+                    return NotFound(response);
+                }
                 else
                 {
-                    Console.WriteLine(response.Message);
                     return NoContent();
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("MajorController.Delete " + ex.Message);
-                return BadRequest(ex.Message);
+                Console.WriteLine("MajorController.Delete: " + ex.Message);
+                return BadRequest(new { Message = ex.Message });
             }
         }
+
     }
 }
